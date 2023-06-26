@@ -68,12 +68,12 @@ header li {
 }
 .card-rate {
   width: calc(100% / 3);
-  border: 0.5px solid rgba(0, 0, 0, 0.5);
+  border: 0.5px solid rgba(0, 0, 0, 0.3);
 }
 .type-card {
   padding: 5px;
   text-align: center;
-  border-bottom: 0.5px solid rgba(0, 0, 0, 0.5);
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.3);
 }
 
 .type-sub-card,
@@ -85,7 +85,7 @@ header li {
 .type-sub-card > * {
   padding: 5px 0;
 }
-.card-container .button-card > * {
+.card-rate .button-card > * {
   margin: 50px 0;
 }
 .card-rate li {
@@ -94,7 +94,7 @@ header li {
 
 .button-card > .button {
   text-align: center;
-  padding: 20px 0;
+  padding: 10px 0;
 }
 
 .button-card a {
@@ -104,7 +104,7 @@ header li {
 
 .line {
   width: 4rem;
-  border-bottom: 0.5px solid rgba(0, 0, 0, 0.5);
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.3);
 }
 
 /* 
@@ -124,6 +124,21 @@ header li {
   width: 30%;
 }
 
+.card-rate-horizontal {
+  border: 0.5px solid rgba(0, 0, 0, 0.3);
+}
+
+/* 
+    *Section 2 - card operation
+*/
+.container-card-operation {
+  flex-wrap: wrap;
+}
+.card-operation {
+  width: calc(100% / 3);
+  gap: 2rem;
+}
+
 /* 
     *UTILITIS
 */
@@ -132,12 +147,12 @@ header li {
 }
 
 .m-container {
-  width: 70%;
+  width: 60%;
   margin: 20px auto;
 }
 
 .s-container {
-  width: 60%;
+  width: 50%;
   margin: 20px auto;
 }
 
@@ -149,7 +164,7 @@ header li {
 }
 
 .button {
-  padding: 5px 10px;
+  padding: 8px 15px;
   color: white;
   background-color: #0061ff;
 }
