@@ -1,0 +1,95 @@
+/* 
+ Todo   GENERICS
+*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+  padding: 0 10px;
+}
+/* 
+    *HEADER
+*/
+
+header {
+  justify-content: space-between;
+  height: 50px;
+  align-items: center;
+}
+
+/* 
+    *jumbotron
+*/
+.jumbotron {
+  background-color: #b4d0e7;
+}
+.m-container > h1 {
+  font-size: 3rem;
+}
+
+.jumbotron > .m-container:last-child {
+  display: flex;
+}
+
+.container-text {
+  width: 30%;
+}
+
+.container-img {
+  width: 70%;
+}
+
+/* 
+    *UTILITIS
+*/
+.l-container {
+  width: 100vw;
+}
+
+.m-container {
+  width: 70%;
+  margin: 20px auto;
+}
+
+.s-container {
+  width: 60%;
+  margin: 20px auto;
+}
+
+.flex {
+  display: flex;
+}
+/* 
+ TODO   DEBUG
+*/
+.debug {
+  border: 2px dashed black;
+}
+
+.debug nav {
+  border: 2px dashed rgb(157, 126, 126);
+  background-color: brown;
+}
+
+.debug .m-container {
+  border: 2px dashed rgb(157, 126, 126);
+  background-color: brown;
+}
+
+.debug .s-container {
+  border: 2px dashed rgb(157, 126, 126);
+  background-color: rgb(165, 151, 42);
+}
+
+.debug .container-text {
+  border: 2px dashed rgb(157, 126, 126);
+  background-color: rgb(165, 151, 42);
+}
+.debug .container-img {
+  border: 2px dashed rgb(157, 126, 126);
+  background-color: rgb(165, 106, 42);
+}
