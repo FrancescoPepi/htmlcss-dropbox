@@ -63,7 +63,8 @@ header li {
 
 .container-card {
   display: flex;
-  gap: 10px;
+  gap: 2rem;
+  margin-bottom: 2rem;
 }
 .card-rate {
   width: calc(100% / 3);
@@ -84,7 +85,7 @@ header li {
 .type-sub-card > * {
   padding: 5px 0;
 }
-.button-card > * {
+.card-container .button-card > * {
   margin: 50px 0;
 }
 .card-rate li {
@@ -102,8 +103,25 @@ header li {
 }
 
 .line {
-  width: 80px;
+  width: 4rem;
   border-bottom: 0.5px solid rgba(0, 0, 0, 0.5);
+}
+
+/* 
+    * CARD HORIZONTAL
+*/
+
+.card-rate-horizontal .type-sub-card {
+  padding-top: 15px;
+  width: 70%;
+}
+
+.type-sub-card > p {
+  padding-top: 50px;
+}
+
+.card-rate-horizontal .button-card {
+  width: 30%;
 }
 
 /* 
@@ -125,6 +143,9 @@ header li {
 
 .flex {
   display: flex;
+}
+.between {
+  justify-content: space-between;
 }
 
 .button {
@@ -163,7 +184,8 @@ header li {
   background-color: rgb(165, 106, 42);
 }
 
-.debug .card-rate {
+.debug .card-rate,
+.debug .card-rate-horizontal {
   border: 2px dashed rgb(176, 0, 0);
   background-color: rgb(0, 187, 25);
   min-height: 50px;
