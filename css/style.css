@@ -7,9 +7,14 @@
   margin: 0;
   padding: 0;
 }
+
 li {
   list-style: none;
-  padding: 0 10px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
 }
 /* 
     *HEADER
@@ -19,6 +24,10 @@ header {
   justify-content: space-between;
   height: 50px;
   align-items: center;
+}
+
+header li {
+  padding: 0 10px;
 }
 
 /* 
@@ -33,6 +42,7 @@ header {
 
 .jumbotron > .m-container:last-child {
   display: flex;
+  gap: 20px;
 }
 
 .container-text {
@@ -41,6 +51,59 @@ header {
 
 .container-img {
   width: 70%;
+}
+
+/* 
+    *MAIN
+*/
+
+/* 
+    *CARD
+*/
+
+.container-card {
+  display: flex;
+  gap: 10px;
+}
+.card-rate {
+  width: calc(100% / 3);
+  border: 0.5px solid rgba(0, 0, 0, 0.5);
+}
+.type-card {
+  padding: 5px;
+  text-align: center;
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.5);
+}
+
+.type-sub-card,
+.offer-card,
+.button-card {
+  margin: 30px 20px;
+}
+
+.type-sub-card > * {
+  padding: 5px 0;
+}
+.button-card > * {
+  margin: 50px 0;
+}
+.card-rate li {
+  padding: 5px 2px;
+}
+
+.button-card > .button {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.button-card a {
+  text-decoration: underline;
+  color: #0061ff;
+}
+
+.line {
+  width: 80px;
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.5);
 }
 
 /* 
@@ -62,6 +125,12 @@ header {
 
 .flex {
   display: flex;
+}
+
+.button {
+  padding: 5px 10px;
+  color: white;
+  background-color: #0061ff;
 }
 /* 
  TODO   DEBUG
@@ -92,4 +161,25 @@ header {
 .debug .container-img {
   border: 2px dashed rgb(157, 126, 126);
   background-color: rgb(165, 106, 42);
+}
+
+.debug .card-rate {
+  border: 2px dashed rgb(176, 0, 0);
+  background-color: rgb(0, 187, 25);
+  min-height: 50px;
+}
+
+.debug .type-sub-card {
+  background-color: rgb(232, 189, 132);
+  min-height: 50px;
+}
+
+.debug .offer-card {
+  background-color: rgb(232, 189, 132);
+  min-height: 50px;
+}
+
+.debug .container-content-card {
+  background-color: antiquewhite;
+  min-height: 50px;
 }
