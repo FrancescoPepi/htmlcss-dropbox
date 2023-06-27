@@ -15,6 +15,13 @@
 
     <!-- GOOGLE FONTS -->
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+Ottoman+Siyaq&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- style CSS -->
     <link rel="stylesheet" href="./css/style.css" />
 
@@ -23,7 +30,7 @@
   </head>
   <body>
     <!-- header-nav -->
-    <header class="l-container flex debug">
+    <header class="l-container flex">
       <nav>
         <ul class="flex">
           <li>
@@ -45,13 +52,29 @@
       </nav>
     </header>
     <!-- jumbotron -->
-    <div class="l-container jumbotron debug">
+    <div class="l-container jumbotron">
       <div class="m-container">
-        <h1>titolo</h1>
+        <h1 class="title-jumbotron">
+          Tutto ciò che ti serve per il lavoro, in un unico posto
+        </h1>
       </div>
       <div class="m-container">
-        <div class="container-text">sss</div>
-        <div class="container-img"><img src="" alt="img Jumbotron" /></div>
+        <div class="container-text">
+          <p>
+            Finalmente tutti i tuoi strumenti, contenuti e collaboratori sono
+            accessibili dallo stesso posto. Dropbox Business è più di uno spazio
+            di archiviazione sicuro: è un modo intelligente e integrato per
+            ottimizzare il flusso di lavoro esistente.
+          </p>
+          <a class="button">Inizia la tua prova gratuita</a>
+          <p>Annulla in qualsiasi momento</p>
+          <div class="icon">
+            <i class="fa-solid fa-arrow-down fa-3x" style="color: #000000"></i>
+          </div>
+        </div>
+        <div class="container-img">
+          <img src="./img/jumbo.png" alt="img Jumbotron" />
+        </div>
       </div>
     </div>
     <main class="l-container debug">

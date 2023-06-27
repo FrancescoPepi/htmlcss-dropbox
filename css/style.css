@@ -1,11 +1,18 @@
 /* 
- Todo   GENERICS
+   *GENERICS
 */
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+body {
+  color: black;
+  font-family: "Noto Serif Ottoman Siyaq", serif;
+}
+header + * {
+  margin-top: 80px;
 }
 
 li {
@@ -16,7 +23,7 @@ li {
 
 a {
   text-decoration: none;
-  color: white;
+  color: black;
   display: inline-block;
 }
 
@@ -24,40 +31,61 @@ a {
   margin: 3rem 0;
 }
 /* 
-    *HEADER
+  todo   HEADER
 */
 
 header {
+  height: 80px;
+  background-color: white;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
   justify-content: space-between;
-  height: 50px;
   align-items: center;
 }
 
 header li {
-  padding: 0 10px;
+  padding: 0 20px;
 }
 
 /* 
-    *jumbotron
+ todo       JUMBOTRON
 */
 .jumbotron {
   background-color: #b4d0e7;
+  box-shadow: inset 0px -80px 0px 0px white;
 }
-.m-container > h1 {
-  font-size: 3rem;
+.title-jumbotron {
+  padding: 1.5rem;
+  font-size: 5rem;
 }
 
 .jumbotron > .m-container:last-child {
   display: flex;
-  gap: 20px;
 }
 
+.icon {
+  margin-top: auto;
+}
 .container-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
   width: calc(100% / 3);
+
+  padding-bottom: 85px;
 }
 
 .container-img {
   width: calc((100% / 3) * 2);
+}
+
+img {
+  width: 100%;
 }
 
 /* 
@@ -202,7 +230,7 @@ header li {
 }
 
 .m-container {
-  width: 1400px;
+  width: 1280px;
   margin: 20px auto;
 }
 
@@ -222,6 +250,8 @@ header li {
   padding: 8px 15px;
   color: white;
   background-color: #0061ff;
+  text-align: center;
+  display: inline-block;
 }
 /* 
  TODO   DEBUG
