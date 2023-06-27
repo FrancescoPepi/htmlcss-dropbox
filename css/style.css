@@ -10,11 +10,18 @@
 
 li {
   list-style: none;
+  display: flex;
+  align-items: center;
 }
 
 a {
   text-decoration: none;
   color: white;
+  display: inline-block;
+}
+
+.section {
+  margin: 3rem 0;
 }
 /* 
     *HEADER
@@ -46,11 +53,11 @@ header li {
 }
 
 .container-text {
-  width: 30%;
+  width: calc(100% / 3);
 }
 
 .container-img {
-  width: 70%;
+  width: calc((100% / 3) * 2);
 }
 
 /* 
@@ -97,7 +104,8 @@ header li {
   padding: 10px 0;
 }
 
-.button-card a {
+.button-card a,
+.title-brand a {
   text-decoration: underline;
   color: #0061ff;
 }
@@ -140,19 +148,66 @@ header li {
 }
 
 /* 
+    *CONTAINER GRILL
+*/
+
+.container-grill {
+  width: calc(100% / 3);
+  aspect-ratio: 1 / 1;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box-grill {
+  width: calc(100% / 2);
+  height: calc(100% / 2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box-grill > img {
+  transform: scale(0.4);
+  filter: invert(1);
+}
+
+.box-grill.florida-img > img {
+  transform: scale(0.8);
+}
+/* 
+    *BOX GRILL COLORE
+*/
+
+.designit-img {
+  background-color: #a2d39b;
+  box-shadow: inset 0px 0px 0px 15px #d1e9cd;
+}
+
+.asu-img {
+  background-color: #61082b;
+}
+
+.florida-img {
+  background-color: #0093ce;
+}
+
+.topps-img {
+  background-color: #ff1c1c;
+}
+/* 
     *UTILITIS
 */
 .l-container {
-  width: 100vw;
+  width: 100%;
 }
 
 .m-container {
-  width: 60%;
+  width: 1400px;
   margin: 20px auto;
 }
 
 .s-container {
-  width: 50%;
+  width: 1080px;
   margin: 20px auto;
 }
 
@@ -218,5 +273,10 @@ header li {
 
 .debug .container-content-card {
   background-color: antiquewhite;
+  min-height: 50px;
+}
+
+.debug .container-grill {
+  background-color: rgb(181, 135, 75);
   min-height: 50px;
 }
