@@ -20,7 +20,7 @@ li {
   display: flex;
 }
 
-header  li {
+header li {
   align-items: center;
 }
 
@@ -139,7 +139,7 @@ img {
   text-align: center;
   border-bottom: 0.5px solid rgba(0, 0, 0, 0.3);
 }
-.section-card{
+.section-card {
   margin: 40px 0px;
 }
 
@@ -157,9 +157,6 @@ img {
   color: gray;
 }
 
-.ofer-plane{
-  margin
-}
 .list-plane {
   display: flex;
 }
@@ -193,25 +190,41 @@ img {
     * CARD HORIZONTAL
 */
 
-.container-card .column-card:last-child{
+.container-card .column-card:last-child {
   width: 100%;
 }
-.container-card .column-card:last-child .body-card{
+.container-card .column-card:last-child .body-card {
   display: flex;
 }
 
-.Enterprise-plane{
+.Enterprise-plane {
   width: 70%;
   padding-bottom: 40px;
 }
 
-.Enterprise-plane-button{
+.Enterprise-plane-button {
   width: 30%;
 }
 
+/* 
+    *Section 1 - PARTNER
+*/
 
+.partner {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 50px;
+}
 
+.partner > .container-text {
+  padding-top: 50px;
+}
 
+.partner .button {
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+}
 
 /* 
     *Section 2 - card operation
@@ -276,16 +289,17 @@ img {
 */
 .l-container {
   width: 100%;
+  margin-bottom: 100px;
 }
 
 .m-container {
   width: 1280px;
-  margin: 20px auto;
+  margin: 50px auto;
 }
 
 .s-container {
   width: 1080px;
-  margin: 20px auto;
+  margin: 50px auto;
 }
 
 .flex {
