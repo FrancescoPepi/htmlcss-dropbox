@@ -18,7 +18,14 @@ header + * {
 li {
   list-style: none;
   display: flex;
+}
+
+header  li {
   align-items: center;
+}
+
+h2 {
+  font-size: 2.5rem;
 }
 
 a {
@@ -89,50 +96,89 @@ img {
 }
 
 /* 
-    *MAIN
+   todo    *MAIN
 */
+
+/* scelta fattura */
+
+.fattura {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+}
+.circle:nth-child(1) {
+  border: 0px;
+  box-shadow: inset 0px 0px 0px 5px #0061ff;
+}
+.circle:nth-child(3) {
+  margin-left: 20px;
+}
+.circle {
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  margin-right: 5px;
+}
 
 /* 
     *CARD
 */
-
 .container-card {
   display: flex;
-  gap: 2rem;
-  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 30px;
+  /* margin-bottom: 2rem; */
+  font-size: 0.9rem;
 }
-.card-rate {
-  width: calc(100% / 3);
-  border: 0.5px solid rgba(0, 0, 0, 0.3);
+.body-card {
+  padding: 0px 30px;
 }
-.type-card {
+.type-plane {
   padding: 5px;
   text-align: center;
   border-bottom: 0.5px solid rgba(0, 0, 0, 0.3);
 }
-
-.type-sub-card,
-.offer-card,
-.button-card {
-  margin: 30px 20px;
+.section-card{
+  margin: 40px 0px;
 }
 
-.type-sub-card > * {
+.section-card > * {
   padding: 5px 0;
 }
-.card-rate .button-card > * {
-  margin: 50px 0;
+.title-plane {
+  font-size: 2rem;
 }
-.card-rate li {
+.price-plane {
+  font-size: 1.1rem;
+  font-weight: 900;
+}
+.date-plane {
+  color: gray;
+}
+
+.ofer-plane{
+  margin
+}
+.list-plane {
+  display: flex;
+}
+
+.column-card {
+  width: calc(100% / 3 - 20px);
+  border: 0.5px solid rgba(0, 0, 0, 0.3);
+}
+
+.column-card li {
   padding: 5px 2px;
 }
 
-.button-card > .button {
+.section-card > .button {
   text-align: center;
-  padding: 10px 0;
+  width: 100%;
 }
 
-.button-card a,
+.section-card a,
 .title-brand a {
   text-decoration: underline;
   color: #0061ff;
@@ -147,22 +193,25 @@ img {
     * CARD HORIZONTAL
 */
 
-.card-rate-horizontal .type-sub-card {
-  padding-top: 15px;
+.container-card .column-card:last-child{
+  width: 100%;
+}
+.container-card .column-card:last-child .body-card{
+  display: flex;
+}
+
+.Enterprise-plane{
   width: 70%;
+  padding-bottom: 40px;
 }
 
-.type-sub-card > p {
-  padding-top: 50px;
-}
-
-.card-rate-horizontal .button-card {
+.Enterprise-plane-button{
   width: 30%;
 }
 
-.card-rate-horizontal {
-  border: 0.5px solid rgba(0, 0, 0, 0.3);
-}
+
+
+
 
 /* 
     *Section 2 - card operation
@@ -250,7 +299,6 @@ img {
   padding: 8px 15px;
   color: white;
   background-color: #0061ff;
-  text-align: center;
   display: inline-block;
 }
 /* 
@@ -284,14 +332,14 @@ img {
   background-color: rgb(165, 106, 42);
 }
 
-.debug .card-rate,
-.debug .card-rate-horizontal {
+.debug .column-card,
+.debug .column-card-horizontal {
   border: 2px dashed rgb(176, 0, 0);
   background-color: rgb(0, 187, 25);
   min-height: 50px;
 }
 
-.debug .type-sub-card {
+.debug .type-plane-card {
   background-color: rgb(232, 189, 132);
   min-height: 50px;
 }
