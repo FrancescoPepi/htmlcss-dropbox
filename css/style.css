@@ -231,6 +231,10 @@ img {
   border: 1px solid black;
 }
 
+.title-section a {
+  color: #0061ff;
+}
+
 /* 
     *Section 2 - card operation
 */
@@ -374,6 +378,7 @@ grill prova
 
 .faq-container i {
   padding-right: 40px;
+  cursor: pointer;
 }
 
 .faq-container .section-card::before {
@@ -421,6 +426,51 @@ grill prova
   background-color: #0061ff;
   display: inline-block;
 }
+
+/* 
+       *footer
+*/
+.bg-footer {
+  background-color: black;
+}
+
+.l-container.bg-footer,
+.bg-footer .m-container {
+  background-color: black;
+  margin-bottom: 0;
+}
+
+.footer-container {
+  color: white;
+
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 30px;
+  gap: 20px;
+}
+
+.footer-container a {
+  color: white;
+  text-decoration: none;
+}
+
+.col-container {
+  width: calc((100% - 80px) / 5);
+  /* flex-basis: 0; */
+}
+
+.col-container:last-child {
+  width: 100%;
+}
+
+.col-container .title-section {
+  font-size: 1.5rem;
+}
+.language i.fa-sort-up {
+  position: relative;
+  top: 5px;
+}
+
 /* 
  TODO   DEBUG
 */
