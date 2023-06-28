@@ -50,6 +50,7 @@ header {
   top: 0;
   left: 0;
   right: 0;
+  z-index: 4;
 
   justify-content: space-between;
   align-items: center;
@@ -252,49 +253,143 @@ img {
     *CONTAINER GRILL
 */
 
-.container-grill {
+/* 
+grill prova
+*/
+.big-grill-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.grill-column {
   width: calc(100% / 3);
-  aspect-ratio: 1 / 1;
+}
+.grill-container {
   display: flex;
   flex-wrap: wrap;
 }
-
-.box-grill {
+.grill-box {
   width: calc(100% / 2);
-  height: calc(100% / 2);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  aspect-ratio: 1 / 1;
+  /* position: absolute; */
 }
 
-.box-grill > img {
-  transform: scale(0.4);
+.grill-box-center {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background-color: #f5f5f5;
+}
+
+.grill-box img {
+  width: 50%;
   filter: invert(1);
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.box-grill.florida-img > img {
-  transform: scale(0.8);
-}
 /* 
     *BOX GRILL COLORE
 */
 
-.designit-img {
+.designit-bg {
   background-color: #a2d39b;
-  box-shadow: inset 0px 0px 0px 15px #d1e9cd;
+  /* box-shadow: inset 0px 0px 0px 15px #d1e9cd; */
 }
 
-.asu-img {
+.asu-bg {
   background-color: #61082b;
 }
 
-.florida-img {
+.florida-bg {
   background-color: #0093ce;
 }
 
-.topps-img {
+.topps-bg {
   background-color: #ff1c1c;
 }
+
+.world-bicycle {
+  background-color: #d5001f;
+}
+
+.hearst-corp {
+  background-color: #b4d0e7;
+}
+
+.lonely-planet {
+  background-color: #0d2481;
+}
+
+.clear-channel {
+  background-color: #ffd830;
+}
+
+/* 
+    *promote - section -  grill
+*/
+
+.bg-azure {
+  background-color: #b4d0e7;
+  padding: 40px 0px;
+}
+.section-promote {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-promote .section-text {
+  width: 50%;
+}
+.section-text .title-section {
+  margin-bottom: 0px;
+  color: #61082b;
+}
+.section-promote .section-button {
+  width: 30%;
+}
+.section-button .button {
+  background-color: #ffffff;
+  color: black;
+  width: 100%;
+  text-align: center;
+}
+.section-button a {
+  text-decoration: none;
+}
+/* 
+    *FAQ
+*/
+
+.faq-container .faq-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0px;
+}
+
+.faq-container .section-card {
+  margin: 0;
+}
+
+.faq-container i {
+  padding-right: 40px;
+}
+
+.faq-container .section-card::before {
+  content: "";
+  border-bottom: 1px solid black;
+
+  display: block;
+}
+
+.faq-container::after {
+  content: "";
+  border-bottom: 1px solid black;
+
+  display: block;
+}
+
 /* 
     *UTILITIS
 */
@@ -381,5 +476,35 @@ img {
 
 .debug .container-grill {
   background-color: rgb(181, 135, 75);
+  min-height: 50px;
+}
+
+.debug .big-grill-container {
+  background-color: rgb(181, 135, 75);
+  border: 2px dashed rgb(176, 0, 0);
+  min-height: 50px;
+}
+
+.debug .grill-column {
+  background-color: rgba(226, 230, 8, 0.612);
+  border: 2px dashed rgb(44, 176, 0);
+  min-height: 50px;
+}
+
+.debug .grill-container {
+  background-color: rgba(8, 230, 27, 0.612);
+  border: 2px dashed rgb(0, 29, 176);
+  min-height: 50px;
+}
+
+.debug .grill-box {
+  background-color: rgba(230, 104, 8, 0.333);
+  border: 2px dashed rgb(176, 0, 67);
+  min-height: 50px;
+}
+
+.debug .grill-box-center {
+  background-color: rgba(230, 8, 34, 0.333);
+  border: 2px dashed rgb(176, 0, 67);
   min-height: 50px;
 }
