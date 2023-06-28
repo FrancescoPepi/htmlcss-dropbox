@@ -257,9 +257,6 @@ img {
     *CONTAINER GRILL
 */
 
-/* 
-grill prova
-*/
 .big-grill-container {
   width: 100%;
   display: flex;
@@ -294,12 +291,42 @@ grill prova
 }
 
 /* 
+    *BOX GRILL CENTRO
+*/
+
+.grill-box-center {
+  padding: 30px;
+}
+.grill-box-center img {
+  width: 50%;
+}
+
+.grill-box-center .section-card:first-child:after {
+  content: "";
+  border-bottom: 1px solid rgba(125, 125, 125, 0.517);
+  width: 110px;
+  display: block;
+  margin-top: 30px;
+}
+
+.designit-opacity {
+  opacity: 0;
+}
+
+.designit-bg:hover {
+  box-shadow: inset 0px 0px 0px 15px #d1e9cd;
+}
+
+.designit-bg:hover .designit-opacity {
+  opacity: 1;
+}
+
+/* 
     *BOX GRILL COLORE
 */
 
 .designit-bg {
   background-color: #a2d39b;
-  /* box-shadow: inset 0px 0px 0px 15px #d1e9cd; */
 }
 
 .asu-bg {
@@ -469,6 +496,13 @@ grill prova
 .language i.fa-sort-up {
   position: relative;
   top: 5px;
+}
+
+.col-container:last-child:before {
+  content: "";
+  border-bottom: 1px solid rgb(125, 125, 125);
+  width: 10%;
+  display: block;
 }
 
 /* 
