@@ -24,8 +24,9 @@ header li {
   align-items: center;
 }
 
-h2 {
+.title-section {
   font-size: 2.5rem;
+  margin-bottom: 50px;
 }
 
 a {
@@ -104,7 +105,6 @@ img {
 .fattura {
   display: flex;
   align-items: center;
-  margin-top: 50px;
 }
 .circle:nth-child(1) {
   border: 0px;
@@ -162,7 +162,7 @@ img {
 }
 
 .column-card {
-  width: calc(100% / 3 - 20px);
+  width: calc((100% - 60px) / 3);
   border: 0.5px solid rgba(0, 0, 0, 0.3);
 }
 
@@ -184,6 +184,10 @@ img {
 .line {
   width: 4rem;
   border-bottom: 0.5px solid rgba(0, 0, 0, 0.3);
+}
+.list-plane i {
+  position: relative;
+  bottom: -3px;
 }
 
 /* 
@@ -229,12 +233,19 @@ img {
 /* 
     *Section 2 - card operation
 */
+
 .container-card-operation {
+  display: flex;
+  gap: 40px;
   flex-wrap: wrap;
 }
+
+.card-operation > .section-card {
+  margin: 10px auto;
+}
+
 .card-operation {
-  width: calc(100% / 3);
-  gap: 2rem;
+  width: calc((100% - 80px) / 3);
 }
 
 /* 
