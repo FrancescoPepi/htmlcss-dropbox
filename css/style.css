@@ -1,6 +1,9 @@
 /* 
    *GENERICS
 */
+html {
+  scroll-behavior: smooth;
+}
 
 * {
   box-sizing: border-box;
@@ -54,6 +57,7 @@ header {
 
   justify-content: space-between;
   align-items: center;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.549);
 }
 
 header li {
@@ -272,13 +276,21 @@ img {
 .grill-box {
   width: calc(100% / 2);
   aspect-ratio: 1 / 1;
-  /* position: absolute; */
+  position: relative;
 }
 
 .grill-box-center {
-  width: 100%;
+  width: calc(100% / 3);
   aspect-ratio: 1 / 1;
   background-color: #f5f5f5;
+  padding: 30px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  opacity: 0;
+  transition: 0.8s ease;
+  animation-duration: 0.8s;
+  animation-timing-function: ease-in-out;
 }
 
 .grill-box img {
@@ -294,31 +306,39 @@ img {
     *BOX GRILL CENTRO
 */
 
-.grill-box-center {
+.grill-box-center-bg {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background-color: #f5f5f5;
   padding: 30px;
-}
-.grill-box-center img {
-  width: 50%;
+  transition: 0.5s ease-out;
 }
 
-.grill-box-center .section-card:first-child:after {
+.grill-box-center img,
+.grill-box-center-bg img {
+  width: 100%;
+  display: block;
+}
+.grill-box-center .section-card:first-child,
+.grill-box-center-bg .section-card:first-child {
+  width: 100px;
+  height: 100px;
+}
+
+.grill-box-center .section-card:nth-of-type(2):before,
+.grill-box-center-bg .section-card:nth-of-type(2):before {
   content: "";
   border-bottom: 1px solid rgba(125, 125, 125, 0.517);
   width: 110px;
   display: block;
-  margin-top: 30px;
+  margin-bottom: 40px;
 }
 
-.designit-opacity {
-  opacity: 0;
-}
-
-.designit-bg:hover {
-  box-shadow: inset 0px 0px 0px 15px #d1e9cd;
-}
-
-.designit-bg:hover .designit-opacity {
-  opacity: 1;
+.in-hover-bg {
+  transition: 0.3s ease;
+  animation-duration: 0.3s;
+  animation-timing-function: ease-in-out;
+  box-shadow: inset 0px 0px 0px 0px rgba(0, 0, 0, 0.3);
 }
 
 /* 
@@ -360,7 +380,9 @@ img {
 /* 
     *promote - section -  grill
 */
-
+.l-container.bg-azure {
+  margin-top: -100px;
+}
 .bg-azure {
   background-color: #b4d0e7;
   padding: 40px 0px;
@@ -392,10 +414,10 @@ img {
 /* 
     *FAQ
 */
-
 .faq-container .faq-section {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap; /* da togliere  wrap e mettere between (in caso si voglia tornare al punto iniziale.) */
+  /* justify-content: space-between; */
   padding: 30px 0px;
 }
 
@@ -452,6 +474,8 @@ img {
   color: white;
   background-color: #0061ff;
   display: inline-block;
+
+  transition: 0.3s ease;
 }
 
 /* 
@@ -591,4 +615,172 @@ img {
   background-color: rgba(230, 8, 34, 0.333);
   border: 2px dashed rgb(176, 0, 67);
   min-height: 50px;
+}
+
+/* 
+!   ALL OVER - ALL ANIMATION
+*/
+
+/* animation grill */
+
+.in-hover-bg:hover {
+  animation-name: box-shadow;
+  box-shadow: inset 0px 0px 0px 15px rgba(0, 0, 0, 0.3);
+}
+
+.in-hover-bg:hover + .grill-box-center {
+  animation-name: hover;
+  opacity: 1;
+}
+
+@keyframes box-shadow {
+  0% {
+    box-shadow: inset 0px 0px 0px 0px rgba(0, 0, 0, 0.3);
+  }
+  100% {
+    box-shadow: inset 0px 0px 0px 15px rgba(0, 0, 0, 0.3);
+  }
+}
+
+@keyframes hover {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.big-grill-container:hover .grill-box-center-bg {
+  opacity: 0;
+}
+
+/* animation header */
+
+header .button-menu {
+  transition: 0.2s ease;
+  animation-duration: 0.3s;
+  animation-timing-function: ease-in-out;
+  box-shadow: 0 26px white, 0 26px red, 0 10px, 0px 0;
+}
+
+header .button-menu:hover {
+  animation-name: box-shadow-header;
+  box-shadow: 0 26px white, 0 35px red, 0 10px, 0px 0;
+}
+
+@keyframes box-shadow-header {
+  0% {
+    box-shadow: 0 26px white, 0 26px red, 0 10px, 0px 0;
+  }
+  100% {
+    box-shadow: 0 26px white, 0 35px red, 0 10px, 0px 0;
+  }
+}
+
+/* animation button */
+
+.button:hover {
+  border-radius: 6px;
+}
+
+/* <!-- checkbox alternativo  per le domande--> */
+
+/* da togliere  wrap e mettere between ad .faq-container (in caso si voglia tornare al punto iniziale.) */
+.section-card > .faq-section {
+  padding-top: 60px;
+  padding-bottom: 0px;
+}
+
+strong {
+  width: 90%;
+  font-size: 1.5rem;
+}
+
+#btnControl-1,
+#btnControl-2,
+#btnControl-3 {
+  display: none;
+}
+
+i {
+  transition: 0.3s ease;
+}
+
+@keyframes margin {
+  0% {
+    margin-bottom: 0px;
+  }
+  100% {
+    margin-bottom: 40px;
+  }
+}
+
+#btnControl-1:checked + label > i {
+  animation-name: margin;
+  animation-duration: 1s;
+  margin-bottom: 40px;
+}
+
+#btnControl-2:checked + label > i {
+  animation-name: margin;
+  animation-duration: 1s;
+  margin-bottom: 40px;
+}
+#btnControl-3:checked + label > i {
+  animation-name: margin;
+  animation-duration: 1s;
+  margin-bottom: 40px;
+}
+
+.prova {
+  width: 80%;
+  padding-left: 20px;
+  transition: 0.3s ease;
+  position: relative;
+  top: -25px;
+  opacity: 0;
+  padding-bottom: 0px;
+}
+#btnControl-1:checked + label + p {
+  animation-name: visible1;
+  animation-duration: 0.7s;
+  position: relative;
+  top: 0px;
+  opacity: 1;
+  padding-bottom: 20px;
+}
+
+#btnControl-2:checked + label + p {
+  animation-name: visible1;
+  animation-duration: 0.7s;
+  position: relative;
+  top: 0px;
+  opacity: 1;
+  padding-bottom: 20px;
+}
+
+#btnControl-3:checked + label + p {
+  animation-name: visible1;
+  animation-duration: 0.7s;
+  position: relative;
+  top: 0px;
+  opacity: 1;
+  padding-bottom: 20px;
+}
+
+@keyframes visible1 {
+  0% {
+    top: -25px;
+    opacity: 0;
+    padding-bottom: 0px;
+  }
+  40% {
+    opacity: 0;
+  }
+  100% {
+    top: 0px;
+    opacity: 1;
+    padding-bottom: 20px;
+  }
 }

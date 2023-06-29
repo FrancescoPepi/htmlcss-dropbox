@@ -30,23 +30,26 @@
   </head>
   <body>
     <!-- header-nav -->
+    <div id="up"></div>
     <header class="l-container flex">
       <nav>
         <ul class="flex">
           <li>
-            <a href=""><img src="./img/logo-small.png" alt="Logo" /></a>
+            <a href="#up"><img src="./img/logo-small.png" alt="Logo" /></a>
           </li>
-          <li><a href="#">Perchè Dropbox</a></li>
-          <li><a href="#">Funzioni</a></li>
-          <li><a href="#">Piani e Prezzi</a></li>
+          <li><a class="button-menu" href="#">Perchè Dropbox</a></li>
+          <li><a class="button-menu" href="#">Funzioni</a></li>
+          <li><a class="button-menu" href="#">Piani e Prezzi</a></li>
         </ul>
       </nav>
 
       <nav>
         <ul class="flex">
-          <li><a href="#">Supporto</a></li>
-          <li><a href="#">Contatta l'ufficio vendite</a></li>
-          <li><a href="#">Accedi</a></li>
+          <li><a class="button-menu" href="#">Supporto</a></li>
+          <li>
+            <a class="button-menu" href="#">Contatta l'ufficio vendite</a>
+          </li>
+          <li><a class="button-menu" href="#">Accedi</a></li>
           <li><a href="#" class="button">Inizia</a></li>
         </ul>
       </nav>
@@ -69,7 +72,12 @@
           <a class="button">Inizia la tua prova gratuita</a>
           <p>Annulla in qualsiasi momento</p>
           <div class="icon">
-            <i class="fa-solid fa-arrow-down fa-3x" style="color: #000000"></i>
+            <a href="#domande"
+              ><i
+                class="fa-solid fa-arrow-down fa-3x"
+                style="color: #000000"
+              ></i
+            ></a>
           </div>
         </div>
         <div class="container-img">
@@ -566,23 +574,88 @@
           <!--  Card-grill sinistra -->
           <div class="grill-column">
             <div class="grill-container">
-              <div class="grill-box designit-bg">
+              <!-- *logo brand button 1-->
+              <div class="grill-box designit-bg in-hover-bg">
                 <img src="./img/designit.svg" alt="Logo designit" />
               </div>
-              <div class="grill-box asu-bg">
+
+              <!-- *logo brand didascalia centro 1 -->
+              <div class="grill-box-center designit-center">
+                <div class="section-card">
+                  <img src="./img/designit.svg" alt="" />
+                </div>
+                <div class="section-card">
+                  "I membri del nostro team lavorano costantemenre in Paesi,
+                  fusi orari e uffici diversi. Ora molte soluzioni sono
+                  compatibili con queste esigenze, ma nessuna è facile quanto
+                  Dropbox e Dropbox paper. Ora molte soluzioni sono compatibili
+                  con queste esigenze, ma nessuna è facile quanto Dropbox
+                  Paper".
+                </div>
+                <div class="section-card">Morten Thomsen, Global IT Lead</div>
+              </div>
+
+              <!-- *logo brand button 2-->
+              <div class="grill-box asu-bg in-hover-bg">
                 <img
                   src="./img/arizona_state_university.svg"
                   alt="Logo arizona state university"
                 />
               </div>
-              <div class="grill-box florida-bg">
+
+              <!-- *logo brand didascalia centro 2 -->
+              <div class="grill-box-center asu-center">
+                <div class="section-card">
+                  <img src="./img/arizona_state_university.svg" alt="" />
+                </div>
+                <div class="section-card">
+                  "I nostri utenti realizzano lavori eccezionali in Dropbox
+                  senza bisogno di alcun supporto. L'implementazione di un
+                  account centralizzato ci ha permesso di sviluppare il lavoro
+                  senza interruzioni, nel modo più sicuro possibile".
+                </div>
+                <div class="section-card">Morten Thomsen, Global IT Lead</div>
+              </div>
+
+              <!-- *logo brand button 3-->
+              <div class="grill-box florida-bg in-hover-bg">
                 <img
                   src="./img/university_of_florida.svg"
                   alt="Logo university of florida"
                 />
               </div>
-              <div class="grill-box topps-bg">
+
+              <!-- *logo brand didascalia centro 3 -->
+              <div class="grill-box-center asu-center">
+                <div class="section-card">
+                  <img src="./img/university_of_florida.svg" alt="" />
+                </div>
+                <div class="section-card">
+                  "L'università pubblica di punta della Florida utilizza Dropbox
+                  per collegare i centri di estensione cooperativi in ​​67
+                  contee e portare l'apprendimento direttamente ai residenti
+                  dello stato.".
+                </div>
+                <div class="section-card">Morten Thomsen, Global IT Lead</div>
+              </div>
+
+              <!-- *logo brand button 4-->
+              <div class="grill-box topps-bg in-hover-bg">
                 <img src="./img/topps.svg" alt="Logo topps" />
+              </div>
+
+              <!-- *logo brand didascalia centro 4 -->
+              <div class="grill-box-center asu-center">
+                <div class="section-card">
+                  <img src="./img/topps.svg" alt="" />
+                </div>
+                <div class="section-card">
+                  "Siamo sempre stati pionieri nel settore delle carte e lo
+                  siamo altrettanto in quello dello spazio digitale. Poiché ogni
+                  cosa “si trova in Dropbox”, possiamo continuare a creare
+                  fantastici progetti".
+                </div>
+                <div class="section-card">Morten Thomsen, Global IT Lead</div>
               </div>
             </div>
           </div>
@@ -590,7 +663,7 @@
           <div class="grill-column">
             <div class="grill-container">
               <!-- centro designit -->
-              <div class="grill-box-center">
+              <div class="grill-box-center-bg">
                 <div class="section-card">
                   <img src="./img/designit.svg" alt="" />
                 </div>
@@ -609,20 +682,91 @@
           <!-- Card-grill destra -->
           <div class="grill-column">
             <div class="grill-container">
-              <div class="grill-box world-bicycle">
+              <!-- *logo brand button 5-->
+              <div class="grill-box world-bicycle in-hover-bg">
                 <img
                   src="./img/world_bicycle_relief.svg"
                   alt="Logo world bicycle relief"
                 />
               </div>
-              <div class="grill-box hearst-corp">
+
+              <!-- *logo brand didascalia centro 5 -->
+              <div class="grill-box-center asu-center">
+                <div class="section-card">
+                  <img
+                    src="./img/world_bicycle_relief.svg"
+                    alt="Logo world bicycle relief"
+                  />
+                </div>
+                <div class="section-card">
+                  "Riceviamo una grande quantità di immagini e spesso ci
+                  perdiamo le cose che non possono essere gestite via e-mail.
+                  Dropbox ci evita parecchi problemi di comunicazione perché
+                  mette sempre a disposizione di tutti le ultime versioni dei
+                  documenti".
+                </div>
+                <div class="section-card">Morten Thomsen, Global IT Lead</div>
+              </div>
+
+              <!-- *logo brand button 6-->
+              <div class="grill-box hearst-corp in-hover-bg">
                 <img src="./img/hearst_corp.svg" alt="Logo hearst corp" />
               </div>
-              <div class="grill-box lonely-planet">
+
+              <!-- *logo brand didascalia centro 6 -->
+              <div class="grill-box-center asu-center">
+                <div class="section-card">
+                  <img src="./img/hearst_corp.svg" alt="Logo hearst corp" />
+                </div>
+                <div class="section-card">
+                  "Hearst conta più di 360 aziende. Dropbox ha un ruolo molto
+                  significativo, in quanto fornisce un hub centralizzato che
+                  consente ai membri dei nostri team di accedere a tutti i
+                  contenuti di cui hanno bisogno, ovunque e da qualsiasi
+                  dispositivo. Ha completamente rivoluzionato il modo di
+                  lavorare dei team".
+                </div>
+                <div class="section-card">Morten Thomsen, Global IT Lead</div>
+              </div>
+
+              <!-- *logo brand button 7-->
+              <div class="grill-box lonely-planet in-hover-bg">
                 <img src="./img/lonely_planet.svg" alt="Logo lonely planet" />
               </div>
-              <div class="grill-box clear-channel">
+
+              <!-- *logo brand didascalia centro 7 -->
+              <div class="grill-box-center asu-center">
+                <div class="section-card">
+                  <img src="./img/lonely_planet.svg" alt="Logo lonely planet" />
+                </div>
+                <div class="section-card">
+                  "Abbiamo sempre avuto una presenza globale, ma prima di
+                  adottare Dropbox non è mai stata così capillare. Dropbox fa
+                  sentire i nostri dipendenti come se si trovassero tutti nello
+                  stesso ufficio".
+                </div>
+                <div class="section-card">Morten Thomsen, Global IT Lead</div>
+              </div>
+
+              <!-- *logo brand button 8-->
+              <div class="grill-box clear-channel in-hover-bg">
                 <img src="./img/clear_channel.svg" alt="Logo clear channel" />
+              </div>
+
+              <!-- *logo brand didascalia centro 8 -->
+              <div class="grill-box-center asu-center">
+                <div class="section-card">
+                  <img src="./img/clear_channel.svg" alt="Logo clear channel" />
+                </div>
+                <div class="section-card">
+                  "Ci impegniamo a creare un ambiente di lavoro di livello
+                  superiore utilizzando le migliori tecnologie disponibili. Con
+                  Dropbox abbiamo ottenuto un ritorno sull'investimento di oltre
+                  il 500%, compiendo passi da gigante per modernizzare la nostra
+                  strategia IT e migliorare la collaborazione all'interno
+                  dell'azienda".
+                </div>
+                <div class="section-card">Morten Thomsen, Global IT Lead</div>
               </div>
             </div>
           </div>
@@ -644,6 +788,7 @@
             </div>
           </section>
         </div>
+        <div id="domande"></div>
       </div>
 
       <div class="l-container">
@@ -655,13 +800,21 @@
             <!-- domanda 1 -->
             <div class="section-card">
               <div class="faq-section">
-                <strong>
-                  Qual è la differenza tra Dropbox Business Standard e Dropbox
-                  Business Advance?
-                </strong>
-                <span
-                  ><i class="fa-solid fa-angle-down" style="color: #000000"></i
-                ></span>
+                <strong> Che cos’è un utente Dropbox per team? </strong>
+                <!-- checkbox alternativo -->
+
+                <input type="checkbox" id="btnControl-1" />
+                <label for="btnControl-1"
+                  ><i class="fa-solid fa-angle-down" style="color: #000000"> </i
+                ></label>
+
+                <p class="prova">
+                  Un utente corrisponde a qualsiasi persona del team con un
+                  indirizzo email unico. Ogni membro del team deve disporre di
+                  una licenza utente unica. E gli utenti possono collegare i
+                  propri account Dropbox a tutti i dispositivi desiderati (PC,
+                  telefoni, tablet, ecc.) senza costi aggiuntivi.
+                </p>
               </div>
             </div>
 
@@ -672,22 +825,41 @@
                   Qual è la differenza tra Dropbox Business Standard e Dropbox
                   Business Advance?
                 </strong>
-                <span
-                  ><i class="fa-solid fa-angle-down" style="color: #000000"></i
-                ></span>
+                <!-- checkbox alternativo -->
+
+                <input type="checkbox" id="btnControl-2" />
+                <label for="btnControl-2"
+                  ><i class="fa-solid fa-angle-down" style="color: #000000"> </i
+                ></label>
+
+                <p class="prova">
+                  Standard offre ai team 5000 GB di spazio di archiviazione con
+                  strumenti di sicurezza, condivisione e collaborazione facili
+                  da usare. Advanced include tutto lo spazio di cui hai bisogno,
+                  oltre a solidi controlli di sicurezza e avvisi. Per ulteriori
+                  informazioni, confronta i piani Dropbox.
+                </p>
               </div>
             </div>
 
-            <!-- domanda 1 -->
+            <!-- domanda 3 -->
             <div class="section-card">
               <div class="faq-section">
-                <strong>
-                  Qual è la differenza tra Dropbox Business Standard e Dropbox
-                  Business Advance?
-                </strong>
-                <span
-                  ><i class="fa-solid fa-angle-down" style="color: #000000"></i
-                ></span>
+                <strong> Quanto spazio riceve il mio team? </strong>
+                <!-- checkbox alternativo -->
+
+                <input type="checkbox" id="btnControl-3" />
+                <label for="btnControl-3"
+                  ><i class="fa-solid fa-angle-down" style="color: #000000"> </i
+                ></label>
+
+                <p class="prova">
+                  Dropbox offre tre piani per soddisfare le esigenze del tuo
+                  team. Il piano Standard offre al tuo team 5000 GB di spazio di
+                  archiviazione condiviso. Per i team che hanno bisogno di più
+                  spazio, i piani Advanced ed Enterprise offrono tutto lo spazio
+                  necessario.
+                </p>
               </div>
             </div>
           </div>
